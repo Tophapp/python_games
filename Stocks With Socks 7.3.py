@@ -250,13 +250,14 @@ while gamerunning:
                 else:
                     print("That Is Not A Value Accepted By This Field")
             else:
-                print("That Is Not A Setting")
+                print("That Is Not A Setting-Value pair")
 
         for x in range(1,numofcomp+1):
             createcompany()
 
     while days:
         os.system("cls")
+        events = []
         print("Day " + str(day+1))
         print("? For Controls")
         if borrowdue >= 0:
@@ -575,7 +576,7 @@ while gamerunning:
                             daylistedit = []
                             for x in range(1,len(v.priceslist) + 1):
                                 daylistedit.append(dayslist[len(dayslist)-x])
-                            print("And Its Somewhat Accurate!   Will Not Update And You MUST Delete It To Type Again, I Can't Fix It")
+                            print("And Its Somewhat Accurate!   Will Not Update Naturally And You MUST Delete It To Type Again")
                             plt.plot(daylistedit, v.priceslist)
                             # naming the x axis
                             plt.xlabel('Days')
