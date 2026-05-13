@@ -8,5 +8,5 @@ if change < 0:
     exit()
 print(f"Your Total For Today Is ${total}")
 print(f"Your Change For Today Is ${change}")
-print("Thank You For Shoping With Us")
+print("Thank You For Shopping With Us")
 
